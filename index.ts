@@ -3,7 +3,7 @@ import { serve } from "https://deno.land/std@0.119.0/http/server.ts";
 
 async function handler(_req: Request): Promise<Response> {
 
- return new Response(_req.body['text']);
+ return new Response(_req.body.split('&'););
 }
 
 serve(handler);
